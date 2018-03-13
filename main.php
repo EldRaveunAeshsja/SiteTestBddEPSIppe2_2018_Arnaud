@@ -9,18 +9,22 @@
 <body>
 	<div class="container">
 		<div class="row">	
-		  	<div class="col-md-2">2</div>
-		  	<div class="col-md-8">4</div>
-		  	<div class="col-md-2">2</div>
+		  	<div class="col-md-12">HEADER</div>
 	 	</div>
 	 	<div class="row">	
-		  	<div class="col-md-2">2</div>
-		  	<div class="offset-md-8 col-md-2">2</div>
+		  	<div class="col-md-2">MENUS</div>
+		  	<div class="col-md-10">
+		  		SECTION
+		  		<div class="row">
+		  			<div class="col-md-10"> article </div>
+		  			<div class="col-md-2"> infos </div>
+		  		</div>
+		  		
+
+		  	</div>
 	 	</div>
 	 	<div class="row">	
-		  	<div class="col-md-2">2</div>
-		  	<div class="col-md-8">4</div>
-		  	<div class="col-md-2">2</div>
+		  	<div class="col-md-12">FOOTER</div>
 	 	</div>
 	</div>
 </body>
