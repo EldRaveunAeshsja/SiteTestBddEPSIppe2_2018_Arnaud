@@ -7,15 +7,21 @@
 
 </head>
 <body>
-	<div class="row">
-  	<div class="col-md-1">Largeur 4</div>
-  	<div class="col-md-1">Largeur 8</div>
-  	<div class="col-md-1">Largeur 4</div>
-  	<div class="col-md-1">Largeur 8</div>
-  	<div class="col-md-1">Largeur 4</div>
-  	<div class="col-md-1">Largeur 8</div>
-  	<div class="col-md-1">Largeur 4</div>
-  	<div class="col-md-1">Largeur 8</div>
-</div>
+	<div class="container">
+		<div class="row">	
+		  	<div class="col-md-2">2</div>
+		  	<div class="col-md-8">4</div>
+		  	<div class="col-md-2">2</div>
+	 	</div>
+	 	<div class="row">	
+		  	<div class="col-md-2">2</div>
+		  	<div class="offset-md-8 col-md-2">2</div>
+	 	</div>
+	 	<div class="row">	
+		  	<div class="col-md-2">2</div>
+		  	<div class="col-md-8">4</div>
+		  	<div class="col-md-2">2</div>
+	 	</div>
+	</div>
 </body>
-</html>
+</html> 
