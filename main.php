@@ -3,29 +3,49 @@
 <head>
 	<title>Site test BDD BTS</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="tuto.css">
+
 
 </head>
 <body>
-	<div class="container">
-		<div class="row">	
-		  	<div class="col-md-12">HEADER</div>
-	 	</div>
-	 	<div class="row">	
-		  	<div class="col-md-2">MENUS</div>
-		  	<div class="col-md-10">
-		  		SECTION
-		  		<div class="row">
-		  			<div class="col-md-10"> article </div>
-		  			<div class="col-md-2"> infos </div>
-		  		</div>
-		  		
-
-		  	</div>
-	 	</div>
-	 	<div class="row">	
-		  	<div class="col-md-12">FOOTER</div>
-	 	</div>
-	</div>
+<div class="container">
+    <header class="row">
+        <div class="col-lg-12">
+            Entete
+        </div>
+    </header>
+    <section>
+        <h1>Management du personnel</h1>
+    </section>
+    <section>
+        <h1>Management des vols</h1>
+    </section>
+    <footer class="row">
+        <div class="col-lg-12">
+            Pied de page
+        </div>
+    </footer>
+</div>
 </body>
-</html> 
+</html>
+
+
+
+
+
+<?php
+
+    include 'include/connexion.php';
+
+$reponse = $bdd->query('SELECT * FROM aeroport');
+
+while ($donnees = $reponse->fetch()) {
+    ?>
+
+
+
+<p><?php  echo $donnees['code_aita']; ?></p>
+
+
+<?php
+ }$reponse->closeCursor();
+?>
